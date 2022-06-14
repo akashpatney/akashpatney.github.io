@@ -8,6 +8,12 @@ body {
     background-color: white;
 }
 
+h1{
+    color: white;
+    position: absolute; 
+    margin-left: 50px;
+    margin-top: 5px;
+}
 
 .topnav {
     overflow: hidden;
