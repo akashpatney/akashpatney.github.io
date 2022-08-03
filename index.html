@@ -2,37 +2,49 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <title>Akash's Portfolio</title>
 </head>
 <body>
-  <div class = "topnav" id = "myTopnav">
-      <a href = "./projects.html">PROJECTS</a>
-      <a href = "./about.html">ABOUT</a>
-      <a href = "./index.html" class = "active">HOME</a>  
-      <a href = "javascript:void(0);" class = icon onclick = "myFunction()">
-        <i class = "fa fa-bars"></i>
-      </a>
-      <h1>MY PORTFOLIO</h1>
+
+  <div class="topnav" id="myTopnav">
+    <a href="./index.html" class="active">HOME</a>
+    <a href="./about.html">ABOUT</a>
+    <a href="./projects.html">PROJECTS</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
- 
+  
+  <div class = "behind">
+    <div class = "col">
+    <img src="./circleprofile.png"  class="center">
+  </div>
+    <div class = "col">
+    <h1 id = "intro">Welcome to my portfolio! My name is Akash Patney and I am an engineering student at the University of Michigan.
+      The purpose of this portfolio is to showcase my projects and to provide information about me!  
+    </h1>
+  </div>
+    <a href="https://www.linkedin.com/in/akash-patney-9b855720a/" class="fa fa-linkedin"></a>
+    <a href="https://github.com/akashpatney" class="fa fa-github"></a>
+  </div>
   
 
- 
   <script>
-    function myFunction(){
-      var x  = document.getElementById("myTopnav");
-      if(x.className === "topnav"){
+      function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
         x.className += " responsive";
-      }
-      else{
+      } else {
         x.className = "topnav";
       }
     }
-  </script>  
+  </script>
+  
+   
 </body>
 
 </html>
