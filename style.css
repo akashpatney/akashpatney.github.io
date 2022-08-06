@@ -101,7 +101,7 @@
     background: #3B5998;
     color: white;
     margin-top: 25px;
-    margin-left: 45%;
+    margin-left: 46%;
     
   }
   
@@ -129,4 +129,9 @@
     float: right; 
     margin-right: 12px; 
     margin-top: 8px;
+  }
+
+  p{
+    margin-left: 20px;
+    margin-right: 10px; 
   }
