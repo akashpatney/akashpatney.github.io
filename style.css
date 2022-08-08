@@ -15,7 +15,7 @@ h1 {
   .topnav {
       background-color: rgb(49, 47, 47);
       overflow: hidden;  
-
+      
     }
     
     /* navgation link style */
@@ -55,7 +55,7 @@ h1 {
     }
 
 
-/*Navigation Section (ABOUT) */
+
     
 
 /* Banner Section */
@@ -150,7 +150,7 @@ h1 {
         margin-left: 20px;
       }
       .behind{
-        height: 770px; 
+        height: 790px; 
       }
     }
     
