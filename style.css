@@ -61,7 +61,7 @@ h1 {
 
   .behind{
     background-color: rgb(21, 150, 255);
-    height: 750px;
+    height: 700px;
   }
 
   
@@ -148,7 +148,9 @@ h1 {
       #soc{
         margin-left: 20px;
       }
-   
+      .behind{
+        height: 770px; 
+      }
     }
     
     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
