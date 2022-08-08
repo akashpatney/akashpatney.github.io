@@ -10,8 +10,7 @@
   /* navigation background */
   .topnav {
       background-color: rgb(49, 47, 47);
-      /*overflow: hidden; */
-      height: 60px; 
+      overflow: hidden;  
 
     }
     
@@ -110,7 +109,7 @@
     background: #3B5998;
     color: white;
     margin-top: 25px;
-    margin-left: 20px; 
+    margin-left: 20px;
   }
 
   /* github */
@@ -145,9 +144,7 @@
       #soc{
         margin-left: 20px;
       }
-      .active{
-        height: 100%;
-      }
+   
     }
     
     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
