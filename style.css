@@ -46,7 +46,7 @@
      
     }
     #portfolio{
-      padding-top: 10px;
+      display: none; 
     }
     #prof{
       width: 95%;
