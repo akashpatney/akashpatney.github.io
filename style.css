@@ -45,6 +45,18 @@
       display: block;
      
     }
+    #portfolio{
+      padding-top: 10px;
+    }
+    #prof{
+      width: 95%;
+    }
+    #blue{
+      height: 750px;
+    }
+    #soc{
+      margin-left: 41%;
+    }
 
   }
   
