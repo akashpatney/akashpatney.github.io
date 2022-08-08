@@ -17,6 +17,7 @@
     padding: 20px 16px;
     text-decoration: none;
     font-size: 17px;
+    display: block;
   }
   
   /* Changes color of links on hover */
@@ -44,22 +45,7 @@
       display: block;
      
     }
-    .topnav{
-        height: 60px;
-    }
-    #portfolio{
-      padding-top: 10px;
-    }
-    #prof{
-      width: 95%;
-    }
-    #blue{
-      height: 750px;
-    }
-    #soc{
-      margin-left: 41%;
-    }
-
+    
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -100,12 +86,11 @@
     text-decoration: none;
   }
   
-  /* Add a hover effect if you want */
+  /* hover effect */
   .fa:hover {
     opacity: 0.7;
   }
   
-  /* Set a specific color for each brand */
   
   /* linkedin */
   .fa-linkedin {
