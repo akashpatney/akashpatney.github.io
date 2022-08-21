@@ -9,6 +9,10 @@ h1 {
     margin-left: 20px;
    }
 
+h3 {
+  color: rgb(21, 122, 205);
+  margin-left: 20px; 
+}
  /* Navigation Section (HOME): */
 
   /* navigation background */
@@ -89,10 +93,19 @@ h1 {
     }
 
    
-  
+    .bdesc {
+      color: rgb(127, 151, 164);
+    }
 
 
   
+/* About Me Section  */ 
+
+    #about {
+      margin-left: 20px;
+      margin-right: 10px;  
+    }
+
 /* Professional Links Section: */
 
   /* Style all font awesome icons */
