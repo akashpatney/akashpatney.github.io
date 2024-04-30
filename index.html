@@ -3,10 +3,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
-    
+
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <title>Akash's Portfolio</title>
 </head>
 <body>
@@ -21,31 +22,32 @@
     </a>
     <h1 id = "portfolio">MY PORTFOLIO</h1>
   </div>
- 
-  
- <!-- Blue Banner --> 
+
+
+ <!-- Blue Banner -->
   <div class = "behind">
 
-      <!-- Profile Image --> 
+      <!-- Profile Image -->
       <img src="./circleprofile2.png"  class="center" id = "prof">
 
       <!-- Bio -->
       <h1 id = "intro" class = "bio">Welcome to my portfolio! My name is Akash Patney and I am an engineering student studying computer science at the University of Michigan.
-        The purpose of this portfolio is to showcase my projects and to share my passion for computer science!  
+        The purpose of this portfolio is to showcase my projects and to share my passion for computer science!
       </h1>
-    
+
       <!-- Professional Links -->
       <div class = "links">
-        <a href="https://www.linkedin.com/in/akash-patney-9b855720a/" target="_blank" class="fa fa-linkedin" id = "soc"></a>
-        <a href="https://github.com/akashpatney" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/akash-patney-9b855720a/" target="_blank" class="fa-brands fa-linkedin" id = "soc" title="Visit my LinkedIn!"></a>
+        <a href="https://github.com/akashpatney" target="_blank" class="fa-brands fa-github" title="Visit my GitHub!"></a>
+        <a href="mailto:apatney@umich.edu" style="color: inherit"><i class="fa-solid fa-envelope"  target="_blank" id="icon-container" title="Send an email to apatney@umich.edu"></i></a>
       </div>
-    
-  </div>
-     
 
-   <!-- Menu bar functionality --> 
+  </div>
+
+
+   <!-- Menu bar functionality -->
   <script>
-      function myFunction() {
+    function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " responsive";
@@ -54,8 +56,8 @@
       }
     }
   </script>
-  
-   
+
+
 </body>
 
 </html>
