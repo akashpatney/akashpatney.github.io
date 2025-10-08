@@ -7,7 +7,8 @@
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/4fb4b7811d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
     <title>Akash's Portfolio</title>
 </head>
 <body>
@@ -15,8 +16,8 @@
 <!-- Navigation Bar -->
   <div class="topnav" id="myTopnav">
     <a href="./index.html" class="active">HOME</a>
-    <a href="./about.html">ABOUT ME</a>
-    <a href="./projects.html">PROJECTS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#experience-id">EXPERIENCE</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars" id = "menu"></i>
     </a>
@@ -44,55 +45,151 @@
 
   </div>
 
+  <!-- Black banner -->
+   <!-- Black banner -->
+<div class="blackbanner" id="projects">
+  <h1 id="project-header">Check out some of my projects below!</h1>
+  <div class="projects-grid">
+    <div class="project-card">
+      <i class="fa-solid fa-face-smile project-icon"></i>
+      <h2 class="project-title">Express AR</h2>
+      <div class="project-buttons">
+        <a href="https://440expressar.wixsite.com/express-ar" class="project-btn">Website</a>
+        <button class="project-btn desc-btn" onclick="showDescription(1)">Description</button>
+      </div>
+      <p class="project-desc" id="desc-1" style="display:none;">
+        This project was the capstone project of my MDE class EECS 440 - Extended Reality for Social Impact. This app is aimed at promoting social emotional learning amongst children. The app includes two modes: story mode and express mode. In story mode, the user travels the room searching for characters, and unlocks them by guessing the emotion of the character correctly. In express mode, the user is presented with a prompt and tasked with making an expression that aligns with the scenario, which the facial recognition technology then assess. Correctly creating the expression awards the user points, which can be used for purchasing AR acessories.
+      </p>
+    </div>
+    <div class="project-card">
+      <i class="fa-solid fa-map-location project-icon"></i>
+      <h2 class="project-title">Ann Arbor Go</h2>
+      <div class="project-buttons">
+        <a href="https://www.youtube.com/watch?v=G9SCoTpseC4" class="project-btn">Demo</a>
+        <button class="project-btn desc-btn" onclick="showDescription(2)">Description</button>
+      </div>
+      <p class="project-desc" id="desc-2" style="display:none;">
+        This project was the second major project of my CSE capstone class EECS 440 - Extended Reality for Social Impact. The goal of this project was to create a variant of the popular game Pokemon Go, but - instead of Pokemon - the game would take on the theme of the city of Ann Arbor. The focus of this project was on using Augmented Reality to make the game more interactive.
+      </p>
+    </div>
+    <div class="project-card">
+      <i class="fa-solid fa-vr-cardboard project-icon"></i>
+      <h2 class="project-title">Computer Lab VR</h2>
+      <div class="project-buttons">
+        <a href="https://www.youtube.com/watch?v=4r8fM5ZR7HQ&feature=youtu.be" class="project-btn">Demo</a>
+        <button class="project-btn desc-btn" onclick="showDescription(3)">Description</button>
+      </div>
+      <p class="project-desc" id="desc-3" style="display:none;">
+        This project was the first of three projects for my CSE capstone class called EECS 440 - Extended Reality for Social Impact. The goal of this project was to recreate a computer lab that is located at the University of Michigan in a building called the BBB (Bob Betty Beyster), alongside also replicating several interactions that aim to capture the experience as a CSE student at the University of Michigan.
+      </p>
+    </div>
+    <div class="project-card">
+      <i class="fa-solid fa-bell project-icon"></i>
+      <h2 class="project-title">Reminder App</h2>
+      <div class="project-buttons">
+        <a href="https://github.com/akashpatney/ReminderApp" class="project-btn">GitHub</a>
+        <button class="project-btn desc-btn" onclick="showDescription(4)">Description</button>
+      </div>
+      <p class="project-desc" id="desc-4" style="display:none;">
+        The goal of this project was to create an android app that would store and display reminders from user input. This project was my first time independently creating a project on Android Studio. Some valuable skills I learned through this project include learning how to use XML to structure the design of my app and also understanding how to use the documentation made specific for android development.
+      </p>
+    </div>
+    <div class="project-card">
+      <i class="fa-solid fa-basketball project-icon"></i>
+      <h2 class="project-title">Sports Analytics</h2>
+      <div class="project-buttons">
+        <a href="https://github.com/akashpatney/Basketball-Analytics-Project" class="project-btn">GitHub</a>
+        <button class="project-btn desc-btn" onclick="showDescription(5)">Description</button>
+      </div>
+      <p class="project-desc" id="desc-5" style="display:none;">
+        The purpose of this project was to construct algorithms that take input data to attempt to accurately predict the outcomes of basketball games. The project uses mathematical calculations to determine statistics strongly correlated with winning outcomes and to also compare respective teams in matchups. While I initally intended for this project to focus on the NBA, as I was developing the project, I realized that the program did not have to be limited to the NBA, but could really actually work for any basketball game. In the future, my hope is to be able to expand this project so that in addition to basketball, other sports are also added.
+      </p>
+    </div>
+    <div class="project-card">
+      <i class="fa-solid fa-address-card project-icon"></i>
+      <h2 class="project-title">Portfolio</h2>
+      <div class="project-buttons">
+        <a href="https://github.com/akashpatney/akashpatney.github.io" class="project-btn">GitHub</a>
+        <button class="project-btn desc-btn" onclick="showDescription(6)">Description</button>
+      </div>
+      <p class="project-desc" id="desc-6" style="display:none;">
+        In this project, I utilized HTML, CSS, and Javascript to develop a website that could display information about my projects and my interest in computer science. I made a specific effort to learn how to build a website that was responsive, as I wanted the site to be accessible on all devices. Through making the website responsive, I learned how to make webpages dynamic instead of static by incorporating Javascript.
+      </p>
+    </div>
+  </div>
+</div>
 
-  <br>
-  <u><h1>About Me</h1></u>
-  <br>
+<div class="experience" id="experience-id">
+  <h1 id="exp-header">See my experience below!</h1>
+  <div class="experience-list">
 
-  <p id = "about">
-    Hi! My name is Akash Patney, and I am currently a student at the
-    University of Michigan majoring in computer science engineering. 
-    As of now, my goal is to pursue a career in software engineering.
+    <div class="experience-item">
+      <div class="experience-logo-col">
+        <img src="./umlogo.png" alt="Ford Logo" class="experience-logo">
+      </div>
+      <div class="experience-details-col">
+        <h2 class="experience-title">University of Michigan</h2>
+        <h3 class="experience-company">Computer Science Engineering</h3>
+        <p class="experience-duration">August 2021 - April 2025</p>
+        <ul class="experience-details">
+        </ul>
+      </div>
+    </div>
 
-    <br>
-    <br>
-    In the past two summers, I have done software engineering internships at Ford Motor Company.
-    Most recently, I worked as a software engineer intern in the Supply Chain group where we were responsible for
-    managing and processing data for Ford's suppliers. I gained experience with a variety of tools including
-    several of GCP's Big Data cloud services (Google Dataflow, Google Pub/Sub, Google Big Query, etc.), Apache
-    Beam paired with Java, and several deployement and configuration tools such as Terraform, Tekton, and YAML.
-    The primary project I worked on was related to taking the data aggregation pipelines that currently
-    existed for supplier data and replacing them with a single Google Data Flow Job. This replacement 
-    offered numerous advantages over the previous structure of the pipelines including a consolidation of
-    the logic for the data aggregation, lower runtimes and costs, the ability to version control, and
-    the ability to test the code.
+    <div class="experience-item">
+      <div class="experience-logo-col">
+        <img src="./ford.png" alt="Ford Logo" class="experience-logo">
+      </div>
+      <div class="experience-details-col">
+        <h2 class="experience-title">Software Engineer Intern</h2>
+        <h3 class="experience-company">Ford Motor Company</h3>
+        <p class="experience-duration">May 2024 - July 2024</p>
+        <ul class="experience-details">
+          <li>Optimized architecture of ETL data pipelines through converting existing pipelines to a singular Google Dataflow job using the Apache Beam framework in Java, thereby reducing run time by 11 minutes</li>
+          <li>Designed a program that generates Dataflow templates to speed Dataflow development for common team use cases</li>
+          <li>Utilized the Google Pub/Sub Messaging Service and Google Big Query to connect data from upstream data sources towards downstream systems</li>
+          <li>Deployed several Dataflow jobs to production through Google Cloud Platform after completing testing in other cloud environments</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-logo-col">
+        <img src="./ford.png" alt="Ford Logo" class="experience-logo">
+      </div>
+      <div class="experience-details-col">
+        <h2 class="experience-title">Software Engineer Intern</h2>
+        <h3 class="experience-company">Ford Motor Company</h3>
+        <p class="experience-duration">May 2024 - July 2024</p>
+        <ul class="experience-details">
+          <li>Utilized Java, Spring Boot, Angular, and DB2 to contribute to the development of a new Ford dealer information system application that reduces manual efforts for users and provides a more modern interface</li>
+          <li>Employed the use of REST APIs to help maintain the correct flow for the UI and backend integration of the application</li>
+          <li>Developed software using test driven development principles for implementing different business plans offered and also incorporated validations to ensure correct data is stored in the DB2 database</li>
+          <li>Engaged in the Agile process of software development with the developers on the team</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-logo-col">
+        <img src="./wyzant.jpg" alt="Ford Logo" class="experience-logo">
+      </div>
+      <div class="experience-details-col">
+        <h2 class="experience-title">Private Tutor</h2>
+        <h3 class="experience-company">Wyzant</h3>
+        <p class="experience-duration">March 2021 - May 2023</p>
+        <ul class="experience-details">
+          <li>Created customized, easily accessible curriculum for the individual needs of students</li>
+          <li>Maintained a perfect five-star rating on the platform from students and have received positive feedback on the structure of the tutoring sessions</li>
+          <li>Developed exercises, presentations, and test preparation resources that students can easily access online</li>
+        </ul>
+      </div>
+    </div>
+
+</div>
 
 
-    <br>
-    <br>
-    In the summer before the most recent, I worked as a full stack software engineer intern at Ford Motor Company
-    for the Dealer Information System Net Enabled team (DISNE). During this internship
-    I worked with a variety of both front and backend technologies, including Java, Spring,
-    Angular, DB2, Jenkins, and PCF. The primary goal of the developers on this team was to
-    redesign a web application called DISNE, which was used to store information for car dealerships
-    that Ford worked with. This was a positive experience for me, since it allowed me to see
-    what it is like to work as a softare engineer in a professional environment for the first time. Gaining
-    exposure to the common software engineering practices and applying the skills I have learned from school
-    was really beneficial, and I hope to continue to build and develop my computer science skills.
-
-    <br>
-    <br>
-
-    To gain experience applying some of the skills learned from school and to learn new ones, I have also dedicated time
-    towards creating personal projects. I have highlighted some of these <a href="./projects.html">personal projects</a> on this website. Additionally,
-    my <a href="https://github.com/akashpatney">github</a> contains the project code for many of these projects.
-
-    <br>
-    <br>
-   
-
-  </p>
-
+</div>
 
    <!-- Menu bar functionality -->
   <script>
@@ -104,8 +201,16 @@
         x.className = "topnav";
       }
     }
-  </script>
 
+    function showDescription(num) {
+      const desc = document.getElementById('desc-' + num);
+      if (desc.style.display === "none") {
+        desc.style.display = "block";
+      } else {
+        desc.style.display = "none";
+      }
+    }
+  </script>
 
 </body>
 
