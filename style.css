@@ -68,9 +68,13 @@ h3 {
 
 .links {
   display: flex;
-  justify-content: center; /* Centers icons horizontally */
-  align-items: center; /* Aligns icons vertically */
-  gap: 15px;
+  gap: 16px;
+  justify-content: center; /* or flex-start */
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
 .center {
