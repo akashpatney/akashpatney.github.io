@@ -432,6 +432,11 @@ body {
       display: block;
       text-align: left;
   }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 650px;
+    justify-items: center;
+  }
 }
 
 /* Very small screens */
@@ -455,7 +460,11 @@ body {
     width: 60px;
     height: 60px;
   }
-
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 650px;
+    justify-items: center;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -464,6 +473,7 @@ body {
     max-width: 650px;
   }
 }
+
 @media (max-width: 700px) {
   .projects-grid {
     grid-template-columns: 1fr;
