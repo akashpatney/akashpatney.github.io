@@ -20,8 +20,18 @@ h3 {
 
 /* Navigation Section (HOME): */
 .topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: rgb(49, 47, 47);
-  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  height: 70px;
+}
+
+body {
+  padding-top: 70px; /* Adjust for nav height */
 }
 
 .topnav a {
@@ -29,9 +39,9 @@ h3 {
   color: white;
   padding: 20px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   display: block;
-  height: 60px;
+  height: 70px;
 }
 
 .topnav a:hover {
@@ -161,8 +171,8 @@ h3 {
 }
 
 
-.blackbanner {
-  background: #111;
+.projectbanner {
+  background: #143a5a;
   color: #fff;
   padding: 48px 0;
   width: 100%;
@@ -181,6 +191,11 @@ h3 {
   font-size: 40px;
   width: 100%;
   margin-left: 32px;
+}
+
+#projects,
+#experience-id {
+  scroll-margin-top: 70px; /* Match or slightly exceed your nav bar height */
 }
 
 .projects-grid {
