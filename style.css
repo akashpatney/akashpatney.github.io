@@ -69,16 +69,6 @@ h3 {
   align-items: center; /* Center children horizontally */
 }
 
-.links {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  width: auto; /* Remove width: 100% */
-  padding: 8px 0;
-  box-sizing: border-box;
-  overflow: visible;
-}
 
 .center {
   display: block;
