@@ -70,6 +70,45 @@ h3 {
 }
 
 
+.links {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #e3eaf2;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-decoration: none;
+}
+
+.links a .fa-brands,
+.links a .fa-solid {
+  font-size: 26px;
+  color: #1976d2;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  background: #1976d2;
+  transform: translateY(-3px) scale(1.08);
+}
+
+.links a:hover .fa-brands,
+.links a:hover .fa-solid {
+  color: #fff;
+}
+
 .center {
   display: block;
   width: 30%;
