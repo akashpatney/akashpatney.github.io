@@ -284,6 +284,13 @@ body {
   padding-left: 0;
 }
 
+.project-desc h3,
+.project-desc p {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 
 .project-icon {
   font-size: 5em;
