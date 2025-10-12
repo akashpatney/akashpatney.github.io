@@ -272,6 +272,19 @@ body {
   text-align: left;;
 }
 
+.skills-header {
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-desc p {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
 .project-icon {
   font-size: 5em;
   color: #1976d2;
